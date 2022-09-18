@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ash
 
 echo ${DAEMON_STARTED}
 if [[ $DAEMON_STARTED -eq 1 ]] ; then
@@ -8,6 +8,6 @@ if [[ $DAEMON_STARTED -eq 1 ]] ; then
 else
   export DAEMON_STARTED=1
   echo "Daemon Started"
-  ./aesdsocket -d
+  aesdsocket -d
 fi
 
